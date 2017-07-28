@@ -13,3 +13,5 @@ then run `make it` in the same level directory you see the make file
 then point your browser to http://localhost/
 
 thats it
+
+Also this makes a pretty simple quick and slick dockerized php dev environment 
