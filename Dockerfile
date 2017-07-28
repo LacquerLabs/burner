@@ -1,5 +1,8 @@
 FROM nginx:alpine
 
+# get ash to load that profile!
+ENV ENV="/etc/profile"
+
 # install php7-fpm and php7-json also do some mucking with the profile and add teh /apps director
 RUN apk --update --no-cache add php7-fpm php7-json && \
 	mv /etc/profile.d/color_prompt /etc/profile.d/color_prompt.sh && \

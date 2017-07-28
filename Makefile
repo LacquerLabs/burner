@@ -7,7 +7,7 @@ run: ## run it
 	docker run -p 80:8080 -v ${PWD}/code:/app --name burney_run --rm -id burney
 
 connect: ## connect to it
-	docker exec -it bunrey_run /bin/sh
+	docker exec -it burney_run /bin/sh
 
 kill: ## kill it
 	docker kill burney_run
