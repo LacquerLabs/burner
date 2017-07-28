@@ -1,16 +1,16 @@
 .DEFAULT_GOAL := help
 
 build: ## Build it
-	docker build -t webapp .
+	docker build -t burney .
 
 run: ## run it
-	docker run -p 80:8080 -v ${PWD}/code:/app --name webapp_test --rm -id webapp
+	docker run -p 80:8080 -v ${PWD}/code:/app --name burney_run --rm -id burney
 
 connect: ## connect to it
-	docker exec -it webapp_test /bin/sh
+	docker exec -it bunrey_run /bin/sh
 
 kill: ## kill it
-	docker kill webapp_test
+	docker kill burney_run
 
 it: build run connect ## do it all
 
